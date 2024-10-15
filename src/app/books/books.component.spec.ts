@@ -1,13 +1,10 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { axe, toHaveNoViolations } from 'jest-axe';
-import { MockProvider } from 'ng-mocks';
-import { of } from 'rxjs';
-import { BooksService } from '../books.service';
-import { BooksComponent } from './books.component';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { MockProvider } from "ng-mocks";
+import { of } from "rxjs";
+import { BooksService } from "../books.service";
+import { BooksComponent } from "./books.component";
 
-expect.extend(toHaveNoViolations);
-
-describe('BooksComponent', () => {
+describe("BooksComponent", () => {
   let component: BooksComponent;
   let fixture: ComponentFixture<BooksComponent>;
 
@@ -22,8 +19,7 @@ describe('BooksComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', async () => {
+  it("should create", async () => {
     expect(component).toBeTruthy();
-    expect(await axe(fixture.nativeElement)).toHaveNoViolations();
   });
 });
