@@ -6,12 +6,11 @@ import { NewBookComponent } from "./app/new-book/new-book.component";
 
 export const routes: Routes = [
   { path: "", redirectTo: "books", pathMatch: "full" },
-  { path: "books", component: BooksComponent, title: "Books" }, //Angular focus 1 1: router titles
-  { path: "new-book", component: NewBookComponent, title: "New Book" },
+  { path: "books", component: BooksComponent }, //Angular focus 1: router titles
+  { path: "new-book", component: NewBookComponent },
   {
     path: "details/:isbn",
     component: BookDetailComponent,
-    title: "Book Details",
   },
-  { path: "about", component: AboutComponent, title: "About" },
+  { path: "about", component: AboutComponent },
 ];
