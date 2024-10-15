@@ -19,11 +19,6 @@
   &:first-child {
     padding-left: 0;
   }
-
-  .active-link {
-    text-decoration: underline 3px;
-    text-underline-offset: $xxs-spacing;
-  }
 }
 
 .navigation-item a {
