@@ -27,10 +27,6 @@ export class AppComponent {
       .subscribe(() => {
         // https://medium.com/@belwerks/a-quick-note-on-skip-links-in-angular-3641a0e32a7a
         this.skipLinkPath = `${this.router.url}#content`;
-        const main = document.querySelector("h1");
-        if (main) {
-          (main as HTMLElement).focus();
-        }
       });
   }
 }
