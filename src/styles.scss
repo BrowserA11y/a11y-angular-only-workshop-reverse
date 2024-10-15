@@ -49,24 +49,6 @@ body {
   height: 100%;
 }
 
-.visually-hidden {
-  position: absolute;
-  left: -100000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.cdk-visually-hidden {
-  position: absolute;
-  left: -100000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
